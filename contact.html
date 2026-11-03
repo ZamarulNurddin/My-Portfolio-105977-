@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nurzamarul Islam - Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container" role="main">
+      <!-- Fluid shape hidden by CSS -->
+
+      <nav role="navigation" aria-label="Primary navigation">
+        <div class="logo">
+          <div class="logo-circle" aria-hidden="true"></div>
+          Zam.Co
+        </div>
+        <div class="nav-links">
+          <a href="index.html" aria-current="page">HOME</a>
+          <a href="projects.html">PROJECTS</a>
+          <a href="about.html">ABOUT ME</a>
+          <a href="contact.html">CONTACT</a>
+        </div>
+      </nav>
+
+      <section class="content" tabindex="0">
+        <h2>Contact Me</h2>
+        <p>Phone: <a href="tel:0172019361">017-2019361</a></p>
+        <p>
+          Email:
+          <a href="mailto:zamarulnurddin@gmail.com">zamarulnurddin@gmail.com</a>
+        </p>
+        <p>
+          Address: Pangsapuri Sri Ayu A1-G-21, Lebuh Kebun Nenas 1/KS 7, Bandar
+          Putera, 41000 Klang, Selangor
+        </p>
+
+        <form id="contact-form" novalidate>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" aria-required="true" />
+          <div class="error-msg" id="name-error"></div>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" aria-required="true" />
+          <div class="error-msg" id="email-error"></div>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" aria-required="true"></textarea>
+          <div class="error-msg" id="message-error"></div>
+
+          <button type="submit" class="sign-in-btn">Send</button>
+        </form>
+
+        <p id="form-status" role="alert" aria-live="polite"></p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
